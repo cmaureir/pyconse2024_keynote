@@ -54,31 +54,30 @@
     </code></pre>
 </section>
 
+<section data-transition="fade-in fade-out">
+    <div id="left">
+        <img src="img/migration_1.svg" />
+    </div>
+    <div id="right" class="fragment">
+        <img src="img/migration_2.svg" />
+    </div>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <div class="r-hstack justify-center">
+      <div><img style="width: 500px;" src="img/career_1.png"/></div>
+      <div><img class="fragment" style="width: 500px;" src="img/career_2.png"/></div>
+      <div><img class="fragment" style="width: 500px;" src="img/career_3.png"/></div>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+    <h1 class="r-fit-text">Our stories are <i class="red">different</i>,</h1>
+    <h1 class="fragment r-fit-text">and that is <i class="python-yellow">perfect</i>.</h1>
+</section>
+
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     <h1 class="r-fit-text">2019</h1>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    About Python/Myself
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    Milestones (timeline)
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    Highlight errors or things that you think might be worth it or not
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    Little steps/wins
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    My experience (high school -> university -> work)
-    We all have stories on how we approached Python,
-    you might be SW Engineers, Artists, Teachers, or a Hobbiest
-    We might share the same passion, and we want to get Python better.
 </section>
 
 <section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
@@ -125,6 +124,10 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+    <h2 class="r-fit-text">Be <i class="python-yellow">curious</i></h2>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     <h2 class="r-fit-text">Looking at <i class="python-yellow">the code</i></h2>
 </section>
 
@@ -156,61 +159,92 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    As the name implies
-    It's written in C
+    <h2 class="r-fit-text">Don't be scared of C</h2>
+    <h2 class="fragment r-fit-text">You might have heard is difficult</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    You might have heard C is difficult
+    <h2>Python can be difficult as well</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    Python can be difficult as well
+    (Python snippets)
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    It all depends on the perspective
+  <h3>Python & C</h3>
+  <div id="left">
+    <pre class="fragment fade-in" data-fragment-index="1"style="font-size: 40%;width: 90%;"><code class="python" data-trim data-noescape>
+    <span class="fragment" data-fragment-index="1"># A comment</span>
+    <span class="fragment" data-fragment-index="2">import some_module</span>
+
+    <span class="fragment" data-fragment-index="3">def mysum(a, b):</span>
+    <span class="fragment" data-fragment-index="3">    return a + b</span>
+
+
+    <span class="fragment" data-fragment-index="4">def main():</span>
+    <span class="fragment" data-fragment-index="5">    msg = "Hello, World!"</span>
+    <span class="fragment" data-fragment-index="5">    x = 3</span>
+    <span class="fragment" data-fragment-index="5">    y = 0.14</span>
+    <span class="fragment" data-fragment-index="6">    z = mysum(x, y)</span>
+    <span class="fragment" data-fragment-index="6">    print("%f" % z)</span>
+
+    <span class="fragment" data-fragment-index="4">if __name__ == "__main__":</span>
+    <span class="fragment" data-fragment-index="4">    main()</span>
+    </code></pre>
+  </div>
+  <div id="right">
+    <pre class="fragment fade-in" data-fragment-index="1"style="font-size: 40%;width: 90%;"><code class="c" data-trim data-noescape>
+    <span class="fragment" data-fragment-index="1">// A comment</span>
+    <span class="fragment" data-fragment-index="2">#include &lt;some_module.h&gt;</span>
+
+    <span class="fragment" data-fragment-index="3">float mysum(int a, float b) {</span>
+    <span class="fragment" data-fragment-index="3">    return a + b;</span>
+    <span class="fragment" data-fragment-index="3">}</span>
+
+    <span class="fragment" data-fragment-index="4">int main(){</span>
+    <span class="fragment" data-fragment-index="5">    char msg[] = "Hello, World!";</span>
+    <span class="fragment" data-fragment-index="5">    int x = 3;</span>
+    <span class="fragment" data-fragment-index="5">    float y = 0.14;</span>
+    <span class="fragment" data-fragment-index="6">    float z = mysum(x, y);</span>
+    <span class="fragment" data-fragment-index="6">    printf("%f", z)</span>
+
+    <span class="fragment" data-fragment-index="4">    return 0;</span>
+    <span class="fragment" data-fragment-index="4">}</span>
+
+    </code></pre>
+  </div>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+    <img src="img/dive.gif" />
+    <!--
     Let's deep dive
     debug hello world
     jump around the different functions
     reach the main loop
+    -->
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h3 style="font-size: 95%;">The whole process</h3>
-  <ul style="font-size: 120%;">
-      <li><i class="yellow-light">D</i><span class="fragment fade-in" data-fragment-index="1">ecoding</span><span class="fragment fade-in" data-fragment-index="2"> - <i class="blue-light">Bytes to text</i></span></li>
-      <li><i class="yellow-light">T</i><span class="fragment fade-in" data-fragment-index="3">okenizing</span><span class="fragment fade-in" data-fragment-index="4"> - <i class="blue-light">Text to words</i></span></li>
-      <li><i class="yellow-light">P</i><span class="fragment fade-in" data-fragment-index="5">arsing</span><span class="fragment fade-in" data-fragment-index="6"> - <i class="blue-light">Words to Semantics</i></span></li>
-      <li><i class="yellow-light">A</i><span class="fragment fade-in" data-fragment-index="7">ST</span><span class="fragment fade-in" data-fragment-index="8"> - <i class="blue-light">Semantics structure</i></span></li>
-      <li><i class="yellow-light">C</i><span class="fragment fade-in" data-fragment-index="9">ompiling</span><span class="fragment fade-in" data-fragment-index="10"> - <i class="blue-light">Bytecode to VM</i></span></li>
+  <h2 style="font-size: 95%;">The Compilation Process</h2>
+  <ul style="font-size: 80%;">
+    <li>1. Tokenizing<span class="fragment fade-in" data-fragment-index="4"> - <i class="blue-light">Text to words</i></span></li>
+    <li>2. Parsing<span class="fragment fade-in" data-fragment-index="6"> - <i class="blue-light">Words to Semantics</i></span></li>
+    <li>3. AST<span class="fragment fade-in" data-fragment-index="8"> - <i class="blue-light">Semantics structure</i></span></li>
+    <li>4. Flow Graph<span class="fragment fade-in" data-fragment-index="8"> - <i
+                class="blue-light">Construct the control flow graph and optimizations</i></span></li>
+    <li>5. Emit bytecode<span class="fragment fade-in" data-fragment-index="10"> - <i
+                class="blue-light">To be executed on the VM</i></span></li>
   </ul>
+  <p style="font-size: 60%;">
+  <a
+          href="https://github.com/python/cpython/blob/main/InternalDocs/compiler.md">github.com/python/cpython/blob/main/InternalDocs/compiler.md</a>
+  </p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h3><i class="yellow-light">D</i>ecoding</h3>
-
-  <pre class="fragment fade-in" data-fragment-index="1" style="font-size: 50%;width: 90%;"><code class="python" data-trim data-noescape>
-  # -*- coding: latin-1 -*-
-  </code></pre>
-  <pre class="fragment fade-in" data-fragment-index="1" style="font-size: 50%;width: 90%;"><code class="python" data-trim data-noescape>
-  # This Python file uses the following encoding: utf-8
-  </code></pre>
-  <pre class="fragment fade-in" data-fragment-index="1" style="font-size: 50%;width: 90%;"><code class="python" data-trim data-noescape>
-  # coding: ascii
-  </code></pre>
-  <ul>
-      <li class="fragment fade-in" data-fragment-index="1"><i class="blue-light">PEP 263</i> - Defining Python Source Code Encodings</li>
-      <li class="fragment fade-in" data-fragment-index="2"><i class="blue-light">PEP 3120</i> - Using UTF-8 as the default source encoding</li>
-      <li class="fragment fade-in" data-fragment-index="3"><i class="blue-light">PEP 3131</i> - Supporting Non-ASCII Identifiers</li>
-  </ul>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h3><i class="yellow-light">T</i>okenizing</h3>
+  <h3>1. Tokenizing</h3>
   <pre class="fragment fade-in" data-fragment-index="1" style="font-size: 50%;width: 90%;"><code class="python" data-trim data-noescape>
   x = 40 + 2
   </code></pre>
@@ -229,66 +263,85 @@
   1,10-1,11:          NEWLINE        '\n'
   </code></pre>
   <p class="fragment fade-in" data-fragment-index="3">
-      <a href="https://docs.python.org/3.8/library/tokenize.html">docs.python.org/3.8/library/tokenize.html</a>
+      <a href="https://docs.python.org/3.12/library/tokenize.html">docs.python.org/3.12/library/tokenize.html</a>
   </p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h3><i class="yellow-light">P</i>arsing</h3>
-  <ul>
-      <li class="fragment fade-in" data-fragment-index="1">Grammar - <a style="font-size: 70%;" href="https://docs.python.org/3.8/reference/grammar.html">docs.python.org/3.8/reference/grammar.html</a></li>
-      <li class="fragment fade-in" data-fragment-index="2">LL(1) - <a style="font-size: 70%;" href="https://en.wikipedia.org/wiki/LL_grammar">en.wikipedia.org/wiki/LL_grammar</a></li>
-  </ul>
+  <h3>2. Parsing</h3>
+  Grammar (EBNF + PEG)<br>
+  <a style="font-size: 70%;" href="https://docs.python.org/3.12/reference/grammar.html">docs.python.org/3.12/reference/grammar.html</a>
   <pre class="fragment fade-in" data-fragment-index="3" style="font-size: 40%;width: 90%;"><code class="python" data-trim data-noescape>
-  stmt: simple_stmt | compound_stmt
-  simple_stmt: small_stmt (';' small_stmt)* [';'] NEWLINE
-  small_stmt: (expr_stmt | del_stmt | pass_stmt | flow_stmt |
-               import_stmt | global_stmt | nonlocal_stmt | assert_stmt)
-  expr_stmt: testlist_star_expr (annassign | augassign (yield_expr|testlist) |
-                       [('=' (yield_expr|testlist_star_expr))+ [TYPE_COMMENT]] )
-  annassign: ':' test ['=' (yield_expr|testlist_star_expr)]
-  testlist_star_expr: (test|star_expr) (',' (test|star_expr))* [',']
-  augassign: ('+=' | '-=' | '*=' | '@=' | '/=' | '%=' | '&=' | '|=' | '^=' |
-              '<<=' | '>>=' | '**=' | '//=')
+# Grammar/python.gram
+# Class definitions
+# -----------------
+
+class_def[stmt_ty]:
+    | a=decorators b=class_def_raw { _PyPegen_class_def_decorators(p, a, b) }
+    | class_def_raw
+
+class_def_raw[stmt_ty]:
+    | invalid_class_def_raw
+    | 'class' a=NAME t=[type_params] b=['(' z=[arguments] ')' { z }] ':' c=block {
+        _PyAST_ClassDef(a->v.Name.id,
+                     (b) ? ((expr_ty) b)->v.Call.args : NULL,
+                     (b) ? ((expr_ty) b)->v.Call.keywords : NULL,
+                     c, NULL, t, EXTRA) }
+  </code></pre>
+  <ul style="font-size: 60%;" class="fragment fade-in" data-fragment-index="4">
+      <li><a href="https://docs.python.org/3.12/reference/lexical_analysis.html">docs.python.org/3.12/reference/lexical_analysis.html</a></li>
+  </ul>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h3>3. Abstract Syntax Tree (AST)</h3>
+  <div id="left">
+  <pre class="fragment fade-in" data-fragment-index="3" style="font-size: 38%;width: 95%;"><code class="python" data-trim data-noescape>
+  # Parser/Python.asdl
+  ...
+  expr = BoolOp(boolop op, expr* values)
+     | NamedExpr(expr target, expr value)
+     | BinOp(expr left, operator op, expr right)
+     | UnaryOp(unaryop op, expr operand)
+     | Lambda(arguments args, expr body)
+     | IfExp(expr test, expr body, expr orelse)
   ...
   </code></pre>
-  <ul style="font-size: 80%;" class="fragment fade-in" data-fragment-index="4">
-      <li><a href="https://docs.python.org/3.8/library/symbol.html">docs.python.org/3.8/library/symbol.html</a></li>
-      <li><a href="https://docs.python.org/3.8/library/token.html">docs.python.org/3.8/library/token.html</a></li>
-      <li><a href="https://docs.python.org/3.8/library/parser.html">docs.python.org/3.8/library/parser.html</a></li>
-  </ul>
-</section>
+  <p style="font-size: 60%;">
+  Zephyr ASDL<br>
+  <a href="https://github.com/python/cpython/blob/main/InternalDocs/compiler.md#abstract-syntax-trees-ast">CPython InternalDocs compiler</a><br/>
+  </p>
+  </div>
+  <div id="right">
+  <pre class="fragment fade-in" data-fragment-index="2" style="font-size: 40%;width: 95%;"><code class="python" data-trim data-noescape>
+>>> import ast
+>>> t = ast.parse("x = 40 + 2")
+>>> ast.dump(t)
+"Module(
+  body=[ Assign(
+      targets=[Name(id='x', ctx=Store())],
+      value=BinOp(
+        left=Constant(value=40),
+        op=Add(),
+        right=Constant(value=2)
+      )
+    )
+  ], type_ignores=[])"
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h3><i class="yellow-light">A</i>bstract Syntax Tree (AST)</h3>
-  <ul style="font-size: 80%;" class="fragment fade-in" data-fragment-index="1">
-      <li>Zephyr ASDL - <a href="https://devguide.python.org/compiler/">devguide.python.org/compiler/</a><br/>
-      <q style="font-size: 50%;">Daniel C. Wang, Andrew W. Appel, Jeff L. Korn, and Chris S. Serra. <b>The Zephyr Abstract Syntax Description Language</b>. In Proceedings of the Conference on Domain-Specific Languages, pp. 213–227, 1997.</q></li>
-  </ul>
-  <pre class="fragment fade-in" data-fragment-index="2" style="font-size: 50%;width: 90%;"><code class="python" data-trim data-noescape>
-  import ast
-  t = ast.parse("a = 40 + 2")
-  ast.dump(t)
-  # Module(body=[Assign(targets=[Name(id='a', ctx=Store())],
-  #     value=BinOp(left=Constant(value=40, kind=None),
-  #                 op=Add(),
-  #                 right=Constant(value=2, kind=None)),
-  #     type_comment=None)],
-  #   type_ignores=[])
 
   </code></pre>
-  <p class="fragment fade-in" data-fragment-index="2">
-      <a href="https://docs.python.org/3.8/library/ast.html">docs.python.org/3.8/library/ast.html</a>
+  <p style="font-size: 60%;">
+      <a href="https://docs.python.org/3.12/library/ast.html">docs.python.org/3.12/library/ast.html</a>
   </p>
+  </div>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h3><i class="yellow-light">A</i>bstract Syntax Tree (AST)</h3>
-  <img width="50%;" src="img/tree.png" />
+  <h3>4. Flow Graph + Optimizations</h3>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h3><i class="yellow-light">C</i>ompiling</h3>
+  <h3>5. Emit bytecode</h3>
   <div id="left">
       <ul style="font-size: 80%;" class="fragment fade-in" data-fragment-index="1">
           <li>Depends on the CPython VM</li>
@@ -319,7 +372,7 @@
   </div>
   <div style="position: absolute; margin-top: 30%;">
   <p class="fragment fade-in" data-fragment-index="3" style="text-align: center;">
-      <a href="https://docs.python.org/3.8/library/dis.html">docs.python.org/3.8/library/dis.html</a>
+      <a href="https://docs.python.org/3.12/library/dis.html">docs.python.org/3.12/library/dis.html</a>
   </p>
   </div>
 </section>
@@ -336,7 +389,8 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    Breaking CPython
+    <h2>Modify code until <i class="red">it breaks</i></h2>
+    <img class="fragment" src="img/noidea.jpg"/>
 
     <!--
     print - skriva ut
@@ -388,7 +442,7 @@
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     <h3>JetBrains Survey 2023</h3>
-    <img style="width: 70%;" src="img/sosurvey2024_most_popular_all.png"/>
+    <img style="width: 70%;" src="img/jetbrains2023.png"/>
     <p style="font-size: 1rem;"><a href="https://www.jetbrains.com/lp/devecosystem-2023/">jetbrains.com/lp/devecosystem-2023/</a></p>
 </section>
 
@@ -480,24 +534,205 @@
         </div>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    PSF
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+    <h1 class="r-fit-text">Python Software</h1>
+    <h1 class="r-fit-text">Foundation</h1>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+    <blockquote style="font-size: 80%;">
+        The mission of the Python Software Foundation is to <i class="python-yellow">promote,
+        protect, and advance</i> the Python programming language, and to
+        <i class="python-yellow">support and facilitate</i> the growth of a diverse and
+        international community of Python programmers.
+    </blockquote>
+
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+    <h3>PSF Structure</h3>
+    <ul>
+        <li>US 501(c)(3) non-profit organization.</li>
+        <li>Board of directors elected by its members and the executive director (Deb
+            Nicholson)</li>
+        <li>Steering Council</li>
+        <li>Employed Staff (12 people)</li>
+    </ul>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+    <h3>PSF Activities</h3>
+
+    <ul>
+        <li>Infrastructure (python.org, PyPI,
+            Docs, other services)</li>
+        <li>Intellectual property (trademarks and licenses)</li>
+        <li>Community support (conferences, educational resources, funding python events)</li>
+    </ul>
+    <blockquote>
+    Office hours (Board and Grants)
+    </blockquote>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+    <h3>PSF - The Board</h3>
+
+    Governing body that oversees the foundation's mission, finances, stragic direction and
+    governance.
+
+    <ul>
+        <li>Governance - responsible for making decisions about the foundation's policies,
+            operations and finances.</li>
+        <li>Mission support - ensures the foundation fulfills its mission to support Python
+            development and the Python community worldwide.</li>
+        <li>Advocacy - Advocate for the language, supporting educational efforts, community
+            projects, and the global growth of Python usage.</li>
+    </ul>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+    <h3>PSF - The Python language</h3>
+
+    <p style="font-size: 80%;">
+    The Python developmnent is handled by the Python Core Developers Team and governed by the Python
+    steering council.
+    </p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+    <h3>PSF - Working groups</h3>
+
+    <div class="r-hstack justify-center" style="font-size: 65%;">
+        <div class="white-box">
+            Packaging
+        </div>
+        <div class="white-box">
+            Grants
+        </div>
+        <div class="white-box">
+            Code of Conduct
+        </div>
+        <div class="white-box">
+            Trademarks
+        </div>
+    </div>
+    <div class="r-hstack justify-center" style="font-size: 65%;">
+        <div class="white-box">
+            Diversity&nbsp;& Inclusion
+        </div>
+        <div class="white-box">
+            Job Board
+        </div>
+        <div class="white-box">
+            Fellows
+        </div>
+    </div>
+        <p style="font-size: 80%;">
+        Interested? <a href="https://www.python.org/psf/workgroups/">python.org/psf/workgroups/</a>
+        </p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+    The importance of a
+    Code of Conduct
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+    <h3>PSF - Membership</h3>
+
+   <table style="font-size: 60%;">
+   	<thead>
+   		<tr>
+            <th><i class="python-yellow">Type</i></th>
+            <th><i class="python-yellow">Price</i></th>
+            <th><i class="python-yellow">Voting Rights</i></th>
+            <th><i class="python-yellow">Published</i></th>
+   		</tr>
+   	</thead>
+   	<tbody>
+   		<tr>
+   			<td>Basic</td>
+   			<td>Free</td>
+   			<td>❌</td>
+   			<td>❌</td>
+   		</tr>
+   		<tr>
+   			<td>Supporting</td>
+   			<td>From 25 USD</td>
+   			<td>✅</td>
+   			<td>❌</td>
+   		</tr>
+   		<tr>
+   			<td>Self certified contributing</td>
+   			<td>Free</td>
+   			<td>✅</td>
+   			<td>❌</td>
+   		</tr>
+   		<tr>
+   			<td>Fellow</td>
+   			<td>Nominated</td>
+   			<td>✅</td>
+   			<td>✅</td>
+   		</tr>
+   	</tbody>
+   </table>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    Extensions
+    <h2 class="r-fit-text">Extending Python,</h2>
+    <h2 class="r-fit-text"><i class="python-yellow">extending the community</i></h2>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+    <h2 class="r-fit-text">Having a base C implementation</h2>
+    <h2 class="r-fit-text">is <i class="qt-neon">very convenient</i>.</h2>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+    NumPy / PyTorch / Tensorflow
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+    Qt
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+    C++ example
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
+    Rust
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
+    Rust Example
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_glue.svg">
+    Don't be afraid of the technical aspects
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    People out there that is still starting like you.
+    Call to actions:
+    - Help your local community/conference.
+    - Help others to reach your level.
+    - Be the difference you want to see.
+    - Actions over opinions.
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+    Python needs
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+    People with different background.
+    People behind the curtains.
+    People that you might not know.
+    That people could probably be you.
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     Future
-    AI
     Where to contribute
 </section>
 
@@ -1498,11 +1733,6 @@ setup(
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <h3>Re-escribir un programa en Python, en otro <i class="qt-mandarin">lenguaje compilado</i></h3>
   <h4>hará que el desempeño sea <i class="qt-lemon">mucho mejor</i></h4>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/14.png">
-  <h1 class="r-fit-text">Parece obvio,</h1>
-  <h1 class="r-fit-text">pero sigue sorprendiendo 🤯</h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">

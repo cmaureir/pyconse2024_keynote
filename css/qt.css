@@ -320,3 +320,9 @@ ul>li {
     height: 150px;
     margin: 40px;
 }
+
+.white-box {
+    margin: 20px;
+    border: 3px solid white;
+    padding: 10px;
+}
