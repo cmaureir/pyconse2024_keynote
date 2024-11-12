@@ -227,7 +227,11 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h2 style="font-size: 95%;">The Compilation Process</h2>
+  <h2 class="r-fit-text">The Compilation Process (*)</h2>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h2 style="font-size: 95%;">Compilation Process</h2>
   <ul style="font-size: 80%;">
     <li>1. Tokenizing<span class="fragment fade-in" data-fragment-index="4"> - <i class="blue-light">Text to words</i></span></li>
     <li>2. Parsing<span class="fragment fade-in" data-fragment-index="6"> - <i class="blue-light">Words to Semantics</i></span></li>
@@ -378,7 +382,77 @@ class_def_raw[stmt_ty]:
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    Break
+    Well, that was OK.
+    <p class="fragment">...but do you remember?</p>
+    <p class="fragment">The faster-cpython project.</p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+    <table>
+        <tr>
+        <td width="20%;"><p style="font-size: 3rem;">Tier 1</p></td>
+        <td>
+        <p style="font-size: 60%;">
+        For executing "warm" code. Its design should be a compromise
+        between fast execution and keeping resource comsumption low.
+        </p>
+        </td>
+        </tr>
+        <tr>
+        <td width="20%;"><p style="font-size: 3rem;">Tier 2</p></td>
+        <td>
+        <p style="font-size: 60%;">
+        Designed to execute "hot" code. It should be designed for fast execution
+        without execessive use of resources. Tier 2 regions are likely to be small,
+        to avoid execessive optimization time and memory consumption.
+        </p>
+        </td>
+        </tr>
+        <tr>
+        <td width="20%;"><p style="font-size: 3rem;">Tier 3</p></td>
+        <td>
+        <p style="font-size: 60%;">
+        Designed to execute the hottest code. Its design is designed for the
+        fastest execution with little or no consideration of resource use. Tier 3
+        regions are likely to be larger than tier 2 regions and derived from those
+        regions. The larger regions offer more oppportunity for optimization, but
+        will be more expensive to optimize.
+        </p>
+        </td>
+        </tr>
+    </table>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+    <h2>Python optimizations</h2>
+    <ul>
+        <li>3.11 - Specializing adaptive interpreter profiles and optimizes programs on-the-fly</li>
+        <li>3.12 - Interpreter generator allow analysis and modification of the DSL spec</li>
+        <li>3.13 - second "micro-op" interpreter detects, optimizes, and executes "hot" code.</li>
+    </ul>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+    <h2>Before the VM</h2>
+    <div class="r-hstack justify-center" style="font-size: 70%;">
+        <div>Bytecode</div>
+        <div class="fragment" data-fragment-index="2" style="margin-left: 15px;">➡️</div>
+        <div class="fragment" data-fragment-index="2" style="margin: 40px;">Specialized<br>Bytecode</div>
+        <div class="fragment" data-fragment-index="3">➡️</div>
+        <div class="fragment" data-fragment-index="3" style="margin: 40px;">Micro-Op<br>traces</div>
+        <div class="fragment" data-fragment-index="4">➡️</div>
+        <div class="fragment" data-fragment-index="4" style="margin: 40px;">Optimized<br>Micro-Op<br>traces</div>
+    </div>
+    <p style="font-size: 50%;">
+    Brandt Bucher: <a href="https://www.youtube.com/watch?v=kMO3Ju0QCDo">Building a JIT compiler for CPython</a> (PyCon US 2024)
+    </p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+    <img style="width: 40%;" src="img/anxiety.gif"/>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     How can I even touch the source code with all that in mind?
 </section>
 
@@ -424,7 +498,7 @@ class_def_raw[stmt_ty]:
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    <h1 class="r-fit-text">The Current</h1>
+    <h1 class="r-fit-text">The <i class="python-yellow">Current</i></h1>
     <h1 class="r-fit-text">State of Python</h1>
 </section>
 
@@ -510,13 +584,13 @@ class_def_raw[stmt_ty]:
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     <h3>Meta Python Conferences</h3>
-        <div class="r-hstack justify-center" style="margin: 50px;">
+        <div class="r-hstack justify-center" style="margin: 10px;">
             <div class="fragment" style="font-size: 2rem;">
                 <img style="width: 200px;" src="img/logo_eps.svg"/>
                 EuroPython
                 <a href="https://europython.eu">europython.eu</a>
             </div>
-            <div class="fragment" style="font-size: 2rem; margin-top: 10px;">
+            <div class="fragment" style="font-size: 2rem; margin-top: 5px;">
                 <img style="width: 200px;" src="img/pycon_apac.png"/>
                 PyCon APAC
                 <a href="https://pycon.asia">pycon.asia</a>
@@ -552,11 +626,10 @@ class_def_raw[stmt_ty]:
 <section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
     <h3>PSF Structure</h3>
     <ul>
-        <li>US 501(c)(3) non-profit organization.</li>
-        <li>Board of directors elected by its members and the executive director (Deb
-            Nicholson)</li>
-        <li>Steering Council</li>
-        <li>Employed Staff (12 people)</li>
+        <li><a href="https://www.501c3.org/what-is-a-501c3/">US 501(c)(3)</a> non-profit organization.</li>
+        <li class="fragment">Board of directors <i class="qt-neon">(12)</i> and the Executive director <i class="qt-neon">(Deb Nicholson)</i></li>
+        <li class="fragment">Steering Council <i class="qt-neon">(5)</i></li>
+        <li class="fragment">PSF Employed Staff <i class="qt-neon">(12)</i></li>
     </ul>
 </section>
 
@@ -564,13 +637,12 @@ class_def_raw[stmt_ty]:
     <h3>PSF Activities</h3>
 
     <ul>
-        <li>Infrastructure (python.org, PyPI,
-            Docs, other services)</li>
-        <li>Intellectual property (trademarks and licenses)</li>
-        <li>Community support (conferences, educational resources, funding python events)</li>
+        <li>Infrastructure - <a href="https://python.org">python.org</a>, <a href="https://pypi.org">PyPI</a>, <a href="https://docs.python.org">Docs</a>, other services)</li>
+        <li class="fragment">Intellectual property (<a href="https://www.python.org/psf/trademarks/">trademarks and licenses</a>)</li>
+        <li class="fragment">Community support</li>
     </ul>
-    <blockquote>
-    Office hours (Board and Grants)
+    <blockquote class="fragment">
+        Montly Office hours (Board and Grants) - <a href="https://pyfound.blogspot.com/2024/08/ask-questions-or-tell-us-what-you-think.html">more info here</a>.
     </blockquote>
 </section>
 
@@ -580,14 +652,11 @@ class_def_raw[stmt_ty]:
     Governing body that oversees the foundation's mission, finances, stragic direction and
     governance.
 
-    <ul>
-        <li>Governance - responsible for making decisions about the foundation's policies,
-            operations and finances.</li>
-        <li>Mission support - ensures the foundation fulfills its mission to support Python
-            development and the Python community worldwide.</li>
-        <li>Advocacy - Advocate for the language, supporting educational efforts, community
-            projects, and the global growth of Python usage.</li>
-    </ul>
+    <div class="r-hstack justify-center" style="font-size: 80%;">
+        <div class="yellow-box">Governance</div> <!-- responsible for making decisions about the foundation's policies operations and finances -->
+        <div class="yellow-box">Mission support</div> <!-- ensures the foundation fulfills its mission to support Python development and the Python community worldwide. -->
+        <div class="yellow-box">Advocacy</div> <!-- Advocate for the language, supporting educational efforts, community projects, and the global growth of Python usage.-->
+    </div>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
@@ -653,26 +722,26 @@ class_def_raw[stmt_ty]:
    		<tr>
    			<td>Basic</td>
    			<td>Free</td>
-   			<td>❌</td>
-   			<td>❌</td>
+   			<td style="text-align: center;">❌</td>
+   			<td style="text-align: center;">❌</td>
    		</tr>
    		<tr>
    			<td>Supporting</td>
    			<td>From 25 USD</td>
-   			<td>✅</td>
-   			<td>❌</td>
+   			<td style="text-align: center;">✅</td>
+   			<td style="text-align: center;">❌</td>
    		</tr>
    		<tr>
    			<td>Self certified contributing</td>
    			<td>Free</td>
-   			<td>✅</td>
-   			<td>❌</td>
+   			<td style="text-align: center;">✅</td>
+   			<td style="text-align: center;">❌</td>
    		</tr>
    		<tr>
    			<td>Fellow</td>
    			<td>Nominated</td>
-   			<td>✅</td>
-   			<td>✅</td>
+   			<td style="text-align: center;">✅</td>
+   			<td style="text-align: center;">✅</td>
    		</tr>
    	</tbody>
    </table>
@@ -684,7 +753,7 @@ class_def_raw[stmt_ty]:
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    <h2 class="r-fit-text">Having a base C implementation</h2>
+    <h2 class="r-fit-text">Having a base <i class="python-yellow">C</i> implementation</h2>
     <h2 class="r-fit-text">is <i class="qt-neon">very convenient</i>.</h2>
 </section>
 
@@ -709,6 +778,9 @@ class_def_raw[stmt_ty]:
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_glue.svg">
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     Don't be afraid of the technical aspects
 </section>
 
@@ -1764,7 +1836,7 @@ setup(
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <h3>fastglob (3/3)</h3>
   <div id="left60">
-  <pre data-fragment-index="1"style="font-size: 25%;width: 100%;"><code class="cpp" data-trim data-noescape>
+  <pre data-fragment-index="1" style="font-size: 25%;width: 100%;"><code class="cpp" data-trim data-noescape>
   // ...
   #include &lt;filesystem&gt;
   namespace fs = std::filesystem;

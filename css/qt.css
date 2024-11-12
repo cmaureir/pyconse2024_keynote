@@ -326,3 +326,10 @@ ul>li {
     border: 3px solid white;
     padding: 10px;
 }
+
+.yellow-box {
+    margin: 20px;
+    border: 3px solid var(--python-yellow);
+    padding: 10px;
+    color: var(--python-yellow);
+}
