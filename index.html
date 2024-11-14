@@ -487,19 +487,19 @@ class_def_raw[stmt_ty]:
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <h3>4. Flow Graph</h3>
-  <ul>
-      <li>Bytecode instructions optimizations</li>
-      <li>Break specialized bytecode into a smaller sequence of bytecodes. (better to optimize)</li>
-      <li>For example:
-          <code>'BINARY_OP_ADD_INT'</code>
+  <ul style="font-size: 80%;">
+    <li>Bytecode instructions <i class="qt-neon">optimizations</i></li>
+      <li class="fragment">Break specialized bytecode into smaller ones</li>
+      <li class="fragment">For example:
+        <i class="python-yellow"><code>'BINARY_OP_ADD_INT'</code></i>
           gets transformed into
-          <code>
+          <pre data-fragment-index="2" style="font-size: 60%;width: 95%;"><code class="python" data-trim data-noescape>
               _CHECK_VALIDITY_AND_SET_IP
               _GUARD_BOTH_INT
               _BINARY_OP_ADD_IT
-        </code>
+          </code></pre>
       </li>
-      <li>Optimization on extra steps and reduce the bytecode list into a smaller-bytecode sequence</li>
+      <li class="fragment">Rduce the bytecodes into a <i class="python-yellow">smaller-bytecode sequence</i></li>
 </ul>
 </section>
 
@@ -551,7 +551,7 @@ class_def_raw[stmt_ty]:
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     <h3>faster-cpyhon</h3>
   <p class="fade-in" style="text-align: center; font-size: 60%;">
-    https://github.com/faster-cpython/
+    <a href="https://github.com/faster-cpython/">github.com/faster-cpython</a>
 </p>
     <table style="font-size: 80%;">
         <tr class="fragment">
@@ -950,7 +950,7 @@ class_def_raw[stmt_ty]:
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <div class="r-vstack justify-center fragment">
+  <div class="r-vstack justify-center">
     <div><img style="width: 50%;" src="img/languages_numpy.png" /></div>
     <div class="fragment"><img style="width: 50%;" src="img/languages_pytorch.png" /></div>
     <div class="fragment"><img style="width: 50%;" src="img/languages_tensorflow.png" /></div>
