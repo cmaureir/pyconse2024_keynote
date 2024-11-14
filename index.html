@@ -197,7 +197,71 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    (TODO: Python snippets)
+  <pre class="fade-in" data-fragment-index="1" style="font-size: 85%;width: 70%;"><code class="python" data-trim data-noescape>
+      s=['a','b','c','d','e']
+      </code></pre>
+  <pre class="fragment fade-in" data-fragment-index="2" style="font-size: 85%;width: 70%;"><code class="python" data-trim data-noescape>
+      s=list('abcde')
+      </code></pre>
+  <pre class="fragment fade-in" data-fragment-index="3" style="font-size: 85%;width: 70%;"><code class="python" data-trim data-noescape>
+      *s,='abcde'
+      </code></pre>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <pre class="fade-in" data-fragment-index="3" style="font-size: 200%;width: 50%;"><code class="python" data-trim data-noescape>
+      n&amp;~-n&lt;1
+      </code></pre>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <pre class="fade-in" data-fragment-index="3" style="font-size: 80%;width: 80%;"><code class="python" data-trim data-noescape>
+  _='_=%r;print(_%%_)';print(_%_)
+      </code></pre>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <pre class="fade-in" data-fragment-index="3" style="font-size: 20%;width: 50%;"><code class="python" data-trim data-noescape>
+x,y=[6            ,11]\
+,[  48,67           ];s\
+ =[   x for         x   \
+ in    vars          (  )]\
+  ;b=    vars(      )[s[  x[
+   0]]]   ;k=      list(  (b.
+      __dict__      .keys  (
+      ) )) ;g=      getattr(b
+            ,k[x[1]*2]);m=g(
+            b,k[y[1]+1]);l=g\
+            (b              ,k
+            [x              [1
+          ]*        3]    ); i=\
+          g(        b,    k[  x[
+            1]        *6]);p   =g\
+            (b        ,k[y[0    ]-
+              x[0]])  ;a=g(g(b,k
+              [x[0]]  )("".join(
+              m(    g(b,k[      x[
+              0]    //2+x[      1]
+              ])    ,(m(          g(
+              b,    k[y[          0]
+              -1    ])  ,g(b,k[x  [1]+
+              y[    1]  +1])([*[  g(b,
+            k[        y[0]-1])  (y)]  *3
+            ],        [0,x[0],  0]))  ))
+          ))  ,"".            join(m(g(b
+          ,k  [x[0            ]//2+x[1]]
+        ),      (m                  (g
+        (b      ,k                  [y
+        [0        ]-                1]
+        ),        g(                b,
+    k[x[1]      +y[1              ]+1]
+    )([*[g      (b,k              [y[0
+  ]-    1])(      y)  ]*4],[x[0]*-  3,-1
+  ,x    [0]*      -2  ,x[0]//2])))  )));
+p(i((1/5**.5)*(((1+5**.5)/2)**(i(a[1])+1)-((1
+-5**.5)/2)**(i(a[1])+1)))) if l(a)>1 else p(1)
+      </code></pre>
+      <p style="font-size: 50%;">Most reproducible winner - <a href="https://pyobfusc.com/#winners">https://pyobfusc.com/#winners</a></p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
@@ -489,8 +553,8 @@ class_def_raw[stmt_ty]:
   <p class="fade-in" style="text-align: center; font-size: 60%;">
     https://github.com/faster-cpython/
 </p>
-    <table>
-        <tr>
+    <table style="font-size: 80%;">
+        <tr class="fragment">
         <td width="40%;"><p style="font-size: 2rem;">Tier 1 (warm code)</p></td>
         <td>
         <p style="font-size: 60%;">
@@ -498,7 +562,7 @@ class_def_raw[stmt_ty]:
         </p>
         </td>
         </tr>
-        <tr>
+        <tr class="fragment">
         <td width="40%;"><p style="font-size: 2rem;">Tier 2 (hot code)</p></td>
         <td>
         <p style="font-size: 60%;">
@@ -507,7 +571,7 @@ class_def_raw[stmt_ty]:
         </p>
         </td>
         </tr>
-        <tr>
+        <tr class="fragment">
         <td width="40%;"><p style="font-size: 2rem;">Tier 3 (hotter code)</p></td>
         <td>
         <p style="font-size: 60%;">
@@ -522,9 +586,9 @@ class_def_raw[stmt_ty]:
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     <h2>Latest Python optimizations</h2>
     <ul>
-        <li class="fragment">3.11 - Specializing adaptive interpreter profiles and optimizes programs on-the-fly</li>
-        <li class="fragment">3.12 - Interpreter generator allow analysis and modification of the DSL spec</li>
-        <li class="fragment">3.13 - second "micro-op" interpreter detects, optimizes, and executes "hot" code.</li>
+      <li class="fragment"><i class="python-yellow">3.11</i> - Specializing Adaptive interpreter</li>
+      <li class="fragment"><i class="python-yellow">3.12</i> - Interpreter generator with analysis and modification of the DSL</li>
+      <li class="fragment"><i class="python-yellow">3.13</i> - More Micro-op interpreter optimization (exec "hot" code).</li>
     </ul>
 </section>
 
@@ -561,7 +625,8 @@ class_def_raw[stmt_ty]:
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    <h2>Hammering some C code</h2>
+  TODO
+  <h2><i class="red">Hammering</i> some C code</h2>
     <img class="fragment" src="img/noidea.jpg"/>
 
     <!--
@@ -580,7 +645,7 @@ class_def_raw[stmt_ty]:
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <div id="left30">
       <h1 class="r-fit-text">How to</h1>
-      <h1 class="r-fit-text">contribute?</h1>
+      <h1 class="r-fit-text"><i class="qt-neon">contribute</i>?</h1>
   </div>
   <div id="right70">
     <ul style="font-size: 80%;">
@@ -711,9 +776,18 @@ class_def_raw[stmt_ty]:
         </div>
 </section>
 
+<section data-transition="fade-in fade-out" data-background-image="img/background_pyladies.png">
+  <div id="left">
+  <h2 class="r-fit-text">PyLadies</h2>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_heart.svg">
+</section>
+
 <section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
     <h1 class="r-fit-text">Python Software</h1>
-    <h1 class="r-fit-text"><i class="python-yellow">Foundation</i></h1>
+    <h1 class="r-fit-text"><i class="python-yellow">Foundation</i> (PSF)</h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
@@ -745,22 +819,22 @@ class_def_raw[stmt_ty]:
     <h3>PSF Activities</h3>
 
     <ul>
-        <li>Infrastructure - <a href="https://python.org">python.org</a>, <a href="https://pypi.org">PyPI</a>, <a href="https://docs.python.org">Docs</a>, other services)</li>
-        <li class="fragment">Intellectual property (<a href="https://www.python.org/psf/trademarks/">trademarks and licenses</a>)</li>
-        <li class="fragment">Community support</li>
+        <li>Infrastructure 🤖 (<a href="https://python.org">python.org</a>, <a href="https://pypi.org">PyPI</a>, <a href="https://docs.python.org">Docs</a>, other services)</li>
+        <li class="fragment">Intellectual property ⚖️ (<a href="https://www.python.org/psf/trademarks/">trademarks and licenses</a>)</li>
+        <li class="fragment">Community support 🫶 (<a href="https://us.pycon.org">PyCon US</a> and many more)</li>
     </ul>
     <blockquote class="fragment">
-        Montly Office hours (Board and Grants) - <a href="https://pyfound.blogspot.com/2024/08/ask-questions-or-tell-us-what-you-think.html">more info here</a>.
+        PSA: Montly Office hours (Board and Grants) - <a href="https://pyfound.blogspot.com/2024/08/ask-questions-or-tell-us-what-you-think.html">more info here</a>.
     </blockquote>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
-    <h3>PSF - The Board</h3>
+    <h3>The PSF Board</h3>
 
-    Governing body that oversees the foundation's mission, finances, stragic direction and
-    governance.
+    Governing body that <i class="python-yellow">oversees the foundation's</i> mission, finances, stragic
+    direction and governance.
 
-    <div class="r-hstack justify-center" style="font-size: 80%;">
+    <div class="r-hstack justify-center fragment" style="font-size: 80%;">
         <div class="yellow-box">Governance</div> <!-- responsible for making decisions about the foundation's policies operations and finances -->
         <div class="yellow-box">Mission support</div> <!-- ensures the foundation fulfills its mission to support Python development and the Python community worldwide. -->
         <div class="yellow-box">Advocacy</div> <!-- Advocate for the language, supporting educational efforts, community projects, and the global growth of Python usage.-->
@@ -768,7 +842,7 @@ class_def_raw[stmt_ty]:
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
-    <h3>PSF - Working groups</h3>
+    <h3>The PSF Working groups</h3>
 
     <div class="r-hstack justify-center" style="font-size: 65%;">
         <div class="white-box">
@@ -795,13 +869,13 @@ class_def_raw[stmt_ty]:
             Fellows
         </div>
     </div>
-        <p style="font-size: 80%;">
-        Interested? <a href="https://www.python.org/psf/workgroups/">python.org/psf/workgroups/</a>
+        <p style="font-size: 80%;" class="fragment">
+          <i class="qt-neon">Interested?</i> <a href="https://www.python.org/psf/workgroups/">python.org/psf/workgroups/</a>
         </p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
-    <h3>PSF - Membership</h3>
+    <h3>PSF Membership</h3>
 
    <table style="font-size: 60%;">
    	<thead>
@@ -842,14 +916,27 @@ class_def_raw[stmt_ty]:
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+  <h3 class="r-fit-text">Do you <i class="qt-neon">contribute</i> at least</h3>
+  <h3 class="r-fit-text"><i class="python-yellow">5 hours per month</i> to Python (*)?</h3>
+  <p class="fragment">
+    <img style="width: 25%;" src="img/contributing_qr.png"/>
+  </p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
     <h2 class="r-fit-text">A crucial pillar:</h2>
     <h2 class="r-fit-text"><i class="python-yellow">Code of Conduct</i></h2>
 </section>
 
+<section data-transition="fade-in fade-out" data-background-image="img/background_psf.svg">
+  <h2 class="r-fit-text">Are those the only aspects</h2>
+  <h2 class="r-fit-text">of <i class="python-yellow">the community</i>?</h2>
+</section>
+
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    <h2 class="r-fit-text">Extending Python,</h2>
-    <h2 class="r-fit-text"><i class="python-yellow">extending the community</i></h2>
+    <h2 class="r-fit-text"><i class="python-yellow">We can extend the community,</i></h2>
+    <h2 class="r-fit-text">by extending Python,</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
@@ -858,62 +945,265 @@ class_def_raw[stmt_ty]:
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-    TODO:
-
-    NumPy / PyTorch / Tensorflow
+  <div class="r-vstack justify-center fragment">
+    <div><img style="width: 50%;" src="img/languages_numpy.png" /></div>
+    <div class="fragment"><img style="width: 50%;" src="img/languages_pytorch.png" /></div>
+    <div class="fragment"><img style="width: 50%;" src="img/languages_tensorflow.png" /></div>
+    <div class="fragment"><img style="width: 50%;" src="img/languages_ruff.png" /></div>
+  </div>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-    TODO:
+    <div id="left" style="text-align: center;" class="fade-in" data-fragment-index="1">
+        <h4 style="margin-top: 8%;">Qt <i class="green">/kjut/</i></h4>
+        <p style="font-size: 80%;margin-top: 5%;">
+            Cross platform <i class="yellow">C++</i> framework, for <i class="yellow">UI</i> and more.
+        </p>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Automation.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Automotive.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Desktop.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/DTP.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Embeddeddev.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/imac-iphone-ipad.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/IOT.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Medical.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Perpetual_sub.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/stopwatch.svg"/>
+        <img style="width: 6%;background:0;border:0;" src="img/qticons/Training.svg"/>
+    </div>
+    <div id="right" style="text-align: center;" class="fragment fade-in" data-fragment-index="2">
+        <img class="plain" style="width: 40%;" src="img/qtforpython.png" /><br/>
+        <a href="https://pyside.org">pyside.org</a><br/>
+        <a href="https://qt.io/qt-for-python">qt.io/qt-for-python</a><br/>
+    </div>
+  </section>
 
-    Qt
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h3>Extending Python with C</h3>
+  <div id="left60">
+  <pre style="font-size: 30%;width: 90%;"><code class="c" data-trim data-noescape>
+  #include &lt;Python.h&gt;
+
+  static char simple_docs[] = "hello(): prints hello :P\n";
+  static PyObject* simple_hello(PyObject* self, PyObject* args){
+      char *msg = "Hey PyConSE!!";
+      return Py_BuildValue("s", msg);
+  }
+  static PyMethodDef simple_funcs[] = {
+      {"hello",                   // ml_name
+       (PyCFunction)simple_hello, // ml_meth
+       METH_NOARGS,               // ml_flags
+       simple_docs},              // ml_doc
+      {NULL, NULL, NULL, NULL}
+  };
+  static struct PyModuleDef simplemodule = {
+      PyModuleDef_HEAD_INIT, // m_base
+      "simple",              // m_name
+      NULL,                  // m_doc
+      -1,                    // m_size
+      simple_funcs           // m_methods
+  };
+  PyMODINIT_FUNC PyInit_simple(void){
+      return PyModule_Create(&amp;simplemodule);
+  }
+  </code></pre>
+  </div>
+  <div id="right40">
+  <pre style="font-size: 30%;width: 100%;"><code class="python" data-trim data-noescape>
+  # setup.py
+  # sorry pyproject.toml
+  from setuptools import setup, Extension
+
+  setup(
+    name='simple',
+    version='1.0',
+    ext_modules=[Extension('simple',
+      ['simple.c'])]
+  )
+  </code></pre>
+  <pre style="font-size: 30%;width: 100%;"><code class="bash" data-trim data-noescape>
+  # Create wheel
+  $ python -m build -w
+  </code></pre>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h2 class="r-fit-text">Generators <i class="python-yellow">saving</i> the day</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-    TODO:
+  <h3>pybind11 (C++)</h3>
+  <pre style="font-size: 65%; width: 90%;"><code class="cpp" data-trim data-noescape>
+  #include &lt;pybind11/pybind11.h&gt;
 
-    C++ example
+  int add(int i, int j) {
+      return i + j;
+  }
+
+  PYBIND11_MODULE(example, m) {
+    // optional module docstring
+    m.doc() = "pybind11 example plugin";
+    m.def("add", &amp;add,
+      "A function that adds two numbers");
+  }
+  </code></pre>
+  <pre style="font-size: 50%; width: 90%;"><code class="bash" data-trim data-noescape>
+  $ c++ -O3 -Wall -shared -std=c++11 \
+    -fPIC $(python3 -m pybind11 --includes) example.cpp \
+    -o example$(python3-config --extension-suffix)
+  </code></pre>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+  <h3>Shiboken (C++)</h3>
+  <div id="left">
+  <pre style="font-size: 65%; width: 90%;"><code class="cpp" data-trim data-noescape>
+  // test.cpp
+  #include &lt;test.hpp&gt;
+
+  int add(int i, int j) {
+      return i + j;
+  }
+
+  </code></pre>
+  <pre style="font-size: 65%; width: 90%;"><code class="cpp" data-trim data-noescape>
+  // test.hpp
+  int add(int i, int j);
+  </code></pre>
+  </div>
+  <div id="right">
+  <pre style="font-size: 40%; width: 90%;"><code class="xml" data-trim data-noescape>
+    &lt;!-- bindings.xml --&gt;
+    &lt;?xml version="1.0"?&gt;
+    &lt;typesystem package="simple"&gt;
+        &lt;function signature="add(int, int)"/&gt;
+    &lt;/typesystem&gt;
+  </code></pre>
+  <pre style="font-size: 50%; width: 90%;"><code class="bash" data-trim data-noescape>
+  $ cmake -S . -B build
+  $ cmake --build build
+  $ cmake --install build
+  </code></pre>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <img style="width: 50%;" src="img/rust_logo_white.png" />
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-    TODO:
-
-    Rust
+  <h2>Rust</h2>
+  <ul style="font-size: 80%;">
+    <li>Bringing a whole <i class="qt-neon">new community</i></li>
+    <li class="fragment"><i class="python-yellow">Safer</i> code. <i class="python-yellow">Faster</i> code</li>
+    <li class="fragment">Be mindful about <span style="text-decoration: underline">comparisons</span></li>
+  </ul>
+  <div class="r-hstack justify-center fragment">
+    <div>
+      <img style="width: 100%;" src="img/ruff.svg" />
+      <p style="font-size: 60%;"><a href="https://astral.sh/ruff">astral.sh/ruff/</a></p>
+    </div>
+    <div>
+      <img style="width: 23%;" src="img/uv2.avif" />
+      <p style="font-size: 60%;"><a href="https://astral.sh/uv">astral.sh/uv/</a></p>
+    </div>
+    <div>
+      <img style="width: 100%;" src="img/rye.svg" />
+      <p style="font-size: 60%;"><a href="https://rye.astral.sh">rye.astral.sh</a></p>
+    </div>
+  </div>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-    TODO:
+  <h3>PyO3 (Rust)</h3>
+  <pre style="font-size: 50%; width: 90%;"><code class="rust" data-trim data-noescape>
+  use pyo3::prelude::*;
 
-    Rust Example
+  /// The sum of two numbers.
+  #[pyfunction]
+  fn add(a: i32, b: i32) -&gt; PyResult<i32> {
+      Ok(a + b)
+  }
+
+  /// A Python module implemented in Rust.
+  #[pymodule]
+  fn simple_rust(_py: Python, m: &amp;PyModule) -&gt; PyResult<()> {
+      m.add_function(wrap_pyfunction!(add, m)?)?;
+      Ok(())
+  }
+  </code></pre>
+  <pre style="font-size: 50%; width: 90%;"><code class="rust" data-trim data-noescape>
+  $ maturin develop
+  </code></pre>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h2 class="r-fit-text">Don't forget</h2>
+  <h2 class="r-fit-text"><i class="qt-neon">other languages</i></h2>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <img src="img/zig_logo.svg" />
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h3>Ziggy PyDust (Zig)</h3>
+  <pre style="font-size: 50%; width: 90%;"><code class="zig" data-trim data-noescape>
+  const py = @import("pydust");
+
+  pub fn add(args: struct { a: i32, b: i32 }) i32 {
+      return args.a + args.b;
+  }
+
+  comptime {
+    py.rootmodule(@This());
+  }
+  </code></pre>
+  <pre style="font-size: 50%; width: 90%;"><code class="rust" data-trim data-noescape>
+  $ poetry install
+  </code></pre>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_glue.svg">
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    <h2>The Glue is supporting the ecosystem</h2>
+    <h2>Supporting the ecosystem</h2>
     <h3><i class="python-yellow">(technical or non-technical)</i></h3>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     <h3>Glue activities</h3>
     <ul>
-        <li>Helping your local community/conference.</li>
-        <li>Helping others to reach your level.</li>
-        <li>Pushing for the change they want to see</li>
-        <li>Favor actions over opinions.</li>
+      <li class="fragment">Helping <i class="python-yellow">the local</i> community/conference.</li>
+      <li class="fragment">Helping <i class="python-yellow">others</i> to reach their level.</li>
+      <li class="fragment">Pushing for the change <i class="python-yellow">they want to see</i></li>
+      <li class="fragment">Favor <i class="qt-neon">actions</i> over opinions.</li>
     </ul>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    <h3>Glue problems</h3>
-    Hidden people.
-    Shooting stars.
-    Burnout.
+  <h2 class="r-fit-text">Why the <i class="python-yellow">glue</i> is</h2>
+  <h2 class="r-fit-text">different from <i class="python-yellow">community</i>?</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    <h2 class="r-fit-text">Python needs..</h2>
+  <h3>Glue <i class="red">problems</i></h3>
+  <div class="r-hstack justify-center" style="font-size: 65%;">
+      <div class="white-box fragment">
+        Hidden people.
+      </div>
+      <div class="white-box fragment">
+        Shooting stars.
+      </div>
+      <div class="white-box fragment">
+        Burnout.
+      </div>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h2 class="r-fit-text">Python <span style="text-decoration: underline;">needs</span>..</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
@@ -935,8 +1225,8 @@ class_def_raw[stmt_ty]:
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    <h2 class="r-fit-text">Hopefully you can join</h2>
-    <h2 class="r-fit-text">the glue supporting our ecosystem</h2>
+    <h2 class="r-fit-text">Hopefully <i class="qt-neon">you can join</i></h2>
+    <h2 class="r-fit-text"><i class="python-yellow">the glue</i> supporting our ecosystem</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_backcover.svg">
@@ -944,14 +1234,13 @@ class_def_raw[stmt_ty]:
     <h4>Beyond "Hello, World!": from the core to you!</h4>
     <p class="x80">
       Dr. <i class="qt-lemon">Cristián</i> Maureira-Fredes<br>
-      <span class="python-blue">@cmaureir</span><br/>
+    <hr class="yellow-line"/>
+      <span>@cmaureir</span><br/>
       <img class="clean-img" src="img/mastodon.png">
       <img class="clean-img" src="img/github_white.png">
       <img class="clean-img" src="img/linkedin.png">
       <img class="clean-img" src="img/twitter.png">
     </p>
-    <hr class="yellow-line"/>
-    <h4>Gracias</h4>
   </div>
 </section>
 
